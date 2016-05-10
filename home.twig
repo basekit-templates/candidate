@@ -1,0 +1,62 @@
+{% extends "layout.twig" %}
+{% block class %}bk-pt-home{% endblock %}
+{% block content %}
+
+<!-- Header Include -->
+    {% include "includes/header.twig" %}
+
+<div class="homepage-background">
+
+    <!-- Theme Feature Widget -->
+
+    {{widget('feature', 'featurehome', {
+        'header': 'profile',
+        'defaultBgImg': asset("images/feature.jpg"),
+        'positionTopPercentage': '0',
+        'showBtn': true,
+        buttonText: "Lorem Ipsum"
+    })|raw}}
+
+    <div class="home-imgs-bg">
+        <div class="home-imgs">
+            {{widget('image', 'img1', {
+              'src': asset("images/volunteer.png"),
+              'title': 'VOLUNTEER',
+              'align': 'widget-align-center'
+            })|raw}}
+
+            {{widget('image', 'img2', {
+              'src': asset("images/contact.png"),
+              'title': 'CONTACT',
+              'align': 'widget-align-center'
+            })|raw}}
+
+            {{widget('image', 'img3', {
+              'src': asset("images/area.png"),
+              'title': 'YOUR AREA',
+              'align': 'widget-align-center'
+            })|raw}}
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Page Content -->
+        <section class="template-content">
+
+            <!-- Main Widget Zone -->
+            {{zone('main')|raw}}
+
+        </section>
+        <!-- End Page Content -->
+
+    </div>
+    <!-- End Container -->
+
+    <!-- Footer Include -->
+    {% include "includes/footer.twig" %}
+
+</div>
+
+{% endblock %}
