@@ -30,6 +30,18 @@ textarea,
     }
 }
 
+.responsivecolumns {
+    .signupform,
+    .blogsearch {
+        input[type="search"],
+        input[type="email"] {
+            @media only screen and (min-width:480px) {
+                .border-radius(0px);
+            }
+        }
+    }
+}
+
 
 // Signup
 // Blog
@@ -509,7 +521,7 @@ button,
 
 .signupform .form-body,// Signup
 .blogsearch .form-body,// Blog
-.ecomproductslist .fieldset--search .form-body .form-group:first-child { // Ecom Search
+.ecomproductslist .fieldset--search .form-body .form-group:last-child { // Ecom Search
     button,
     .button {
         @media only screen and (min-width:480px) {
@@ -520,6 +532,19 @@ button,
             -moz-border-radius-bottomleft: 0;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.responsivecolumns {
+    .signupform .form-body,// Signup
+    .blogsearch .form-body,// Blog
+    .ecomproductslist .fieldset--search .form-body .form-group:first-child { // Ecom Search
+        button,
+        .button {
+            @media only screen and (min-width:480px) {
+                .border-radius(50px);
+            }
         }
     }
 }
