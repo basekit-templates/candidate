@@ -725,7 +725,7 @@ hr {
     .imagewidget {
         padding: 10px 0 8px;
         figure {
-            margin: 10px 10px;
+            margin: 10px;
         }
         .caption {
             margin: 10px 0;
@@ -733,9 +733,14 @@ hr {
     }
 
     .content {
+        padding: 10px 0;
+        @media @mobile {
+            padding: 0 0 10px;
+        }
         h1, h2, h3, h4, p, a {
             padding-bottom: 0;
             color: @color-swatch7;
+            text-align: center;
         }
     }
 
