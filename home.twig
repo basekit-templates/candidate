@@ -19,23 +19,33 @@
 
     <div class="home-imgs-bg">
         <div class="home-imgs">
+          <div class="home-imgs-flex home-imgs-one">
             {{widget('image', 'img1', {
               'src': asset("images/volunteer.png"),
-              'title': 'VOLUNTEER',
               'align': 'widget-align-center'
             })|raw}}
-
+            {{widget('content', 'sidebarcontent', {
+              content: '<p>VOLUNTEER</p>'
+            })|raw}}
+            </div>
+            <div class="home-imgs-flex home-imgs-two">
             {{widget('image', 'img2', {
               'src': asset("images/contact.png"),
-              'title': 'CONTACT',
               'align': 'widget-align-center'
             })|raw}}
-
+            {{widget('content', 'sidebarcontent', {
+              content: '<p>CONTACT</p>'
+            })|raw}}
+            </div>
+            <div class="home-imgs-flex home-imgs-three">
             {{widget('image', 'img3', {
               'src': asset("images/area.png"),
-              'title': 'YOUR AREA',
               'align': 'widget-align-center'
             })|raw}}
+            {{widget('content', 'sidebarcontent', {
+              content: '<p>YOUR AREA</p>'
+            })|raw}}
+            </div>
         </div>
     </div>
 
