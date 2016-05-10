@@ -465,86 +465,6 @@ hr {
 
 
 // -----------------------------
-// Footer
-// -----------------------------
-
-.template-footer {
-    margin-top: 50px;
-    text-align: center;
-    background-color: darken(@color__body--background, 6%);
-    .container {
-        margin-top: 0;
-    }
-}
-
-// Columns in Footer
-// -----------------
-
-.template-footer {
-    .flex-item {
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-    }
-    .widget {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-.template-footer1 {
-    padding: 30px 0;
-    @media @tablet {
-        padding: 30px 5%;
-    }
-}
-
-.template-footer2 {
-    background-color: darken(@color__body--background, 50%);
-    .widget {
-        h1, h2, h3, h4, p, a, .social-link:before {
-            color: @color-swatch7;
-        }
-    }
-    @media @tablet {
-        padding: 30px 5%;
-    }
-}
-
-.template-footer2__column1 {
-    text-align: left;
-    .widget {
-        margin-bottom: 20px;
-    }
-}
-
-.template-footer2__column2 {
-    text-align: right;
-}
-
-// -----------------------------
-// Profile Widget
-// -----------------------------
-
-.template-footer .profile {
-    .address p {
-        padding-bottom: 0;
-    }
-    .headline,
-    .strapline,
-    .description {
-        @media @mobile {
-            font-size: @font__p--font-size;
-            font-weight: @font__p--font-weight;
-            line-height: @font__p--line-height;
-        }
-    }
-}
-
-
-
-
-// -----------------------------
 // Yelp
 // -----------------------------
 
@@ -789,3 +709,86 @@ hr {
         }
     }
 }
+
+
+
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+.template-footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: darken(@color__body--background, 6%);
+    .container {
+        margin-top: 0;
+    }
+}
+
+// Columns in Footer
+// -----------------
+
+.template-footer {
+    .flex-item {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    .widget {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.template-footer1 {
+    padding: 30px 0;
+    @media @tablet {
+        padding: 30px 5%;
+    }
+}
+
+.template-footer2 {
+    background-color: darken(@color__body--background, 70%);
+    .widget {
+        h1, h2, h3, h4, p, a, .social-link:before {
+            color: @color-swatch7;
+        }
+    }
+    @media @tablet {
+        padding: 30px 5%;
+    }
+}
+
+.template-footer2__column1 {
+    text-align: left;
+    .widget {
+        @media @tablet {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.template-footer2__column2 {
+    text-align: right;
+}
+
+// -----------------------------
+// Profile Widget
+// -----------------------------
+
+.template-footer .profile {
+    .address p {
+        padding-bottom: 0;
+    }
+    .headline,
+    .strapline,
+    .description {
+        @media @mobile {
+            font-size: @font__p--font-size;
+            font-weight: @font__p--font-weight;
+            line-height: @font__p--line-height;
+        }
+    }
+}
+
