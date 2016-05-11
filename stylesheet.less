@@ -1,8 +1,8 @@
 // -----------------------------
-// BasePlate main styles
+// IMPORTS & MAIN STYLES
 // -----------------------------
 
-
+// -----------------------------
 // Template Imports
 // -----------------------------
 
@@ -41,7 +41,7 @@
 
 
 // -----------------------------
-// TYPOGRAPHY
+// Typography
 // -----------------------------
 
 .company-link {
@@ -549,7 +549,7 @@ hr {
         vertical-align: middle;
         display: table-cell;
         z-index: 99;
-        padding: 100px 0;
+        padding: 30px 0;
     }
     .content-inner-wrap {
         max-width: 960px;
@@ -767,6 +767,9 @@ hr {
         -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+        @media @tablet {
+            width: 100%;
+        }
     }
     .widget {
         width: 100%;
