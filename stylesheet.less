@@ -784,12 +784,17 @@ hr {
 .template-footer2 {
     background-color: darken(@color__body--background, 70%);
     .widget {
-        h1, h2, h3, h4, p, a, .social-link:before {
+        h1, h2, h3, h4, p, a, .social-link:before,
+        .account-link, .tweet-metadata .via, .tweet-metadata .timestamp,
+        .signupform .legend {
             color: @color-swatch7;
         }
     }
     @media @tablet {
         padding: 30px 5%;
+    }
+    .tweet-item .avatar-link {
+        margin: 0;
     }
 }
 
@@ -800,10 +805,47 @@ hr {
             margin-bottom: 20px;
         }
     }
+    .profile .twitter .tweet-item,
+    .signupform .legend  {
+        text-align: left;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    .signupform .form-body {
+        width: 90%;
+        margin: 0 auto 0 0;
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+            margin: 0 auto 0 0;
+        }
+        @media @tablet {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 }
 
 .template-footer2__column2 {
     text-align: right;
+    .profile .twitter .tweet-item {
+        text-align: left;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    .signupform .form-body {
+        width: 90%;
+        margin: 0 0 0 auto;
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+            margin: 0 0 0 auto;
+        }
+        @media @tablet {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 }
 
 // -----------------------------
