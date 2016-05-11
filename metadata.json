@@ -204,7 +204,7 @@
         },
         "forms": {
             "color__form-legend--text": "@font-swatch3-color",
-            "color__form-label--text": "@font-swatch3-color"
+            "color__form-label--text": "@color__p--text"
         },
         "image": {
             "color__image-title--text": "@color-swatch4",
@@ -222,7 +222,7 @@
         "ecommerce": {
             "color__ecomproductslist-label--text": "@color__form-label--text",
             "color__ecomproductslist-product-item--background": "@color-swatch7",
-            "color__ecomproductslist-product-title--text": "@color__primary",
+            "color__ecomproductslist-product-title--text": "@color-swatch2",
             "color__ecomproduct-images--background": "transparent",
             "color__ecomproduct-content--background": "@color-swatch7",
             "color__ecomproduct-title--text": "@font-swatch1-color",

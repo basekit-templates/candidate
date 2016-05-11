@@ -125,8 +125,7 @@ textarea,
 // Legends and labels
 // ----------------------------
 
-.legend,
-.label {
+.legend {
     font-family: @font__h3--font-family;
     color: @font-swatch3-color;
     letter-spacing: @font__h3--letter-spacing;
@@ -146,9 +145,10 @@ legend,
 }
 
 .label {
-    color: @color__form-label--text;
-    font-size: bkscale(@font__h3--font-size,0.7);
-    line-height: bkscale(@font__h3--line-height,0.7);
+    color: @color__p--text;
+    font-family: @font__h3--font-family;
+    font-size: bkscale(@font__p--font-size,0.8);
+    line-height: bkscale(@font__p--line-height,0.8);
 }
 
 // Hide Blog Label
@@ -357,9 +357,6 @@ legend,
 .ecomproductslist .form {
     float: left;
     width: 100%;
-    padding: 20px;
-    background-color: darken(@color__body--background, 3%);
-    border: 1px solid darken(@color__body--background, 5%);
 }
 
 // Hide Legend
