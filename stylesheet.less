@@ -768,6 +768,9 @@ hr {
         -ms-flex: 1 1 48%;
         flex: 1 1 48%;
         @media @tablet {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
             width: 100%;
         }
     }
@@ -804,6 +807,9 @@ hr {
 
 .template-footer2__column1 {
     text-align: left;
+    @media @tablet {
+        text-align: center;
+    }
     .widget {
         @media @tablet {
             margin-bottom: 20px;
@@ -846,6 +852,9 @@ hr {
 
 .template-footer2__column2 {
     text-align: right;
+    @media @tablet {
+        text-align: center;
+    }
     .signupform .form-body {
         width: 90%;
         margin: 0 0 0 auto;
