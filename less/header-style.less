@@ -312,12 +312,18 @@
 }
 
 // Sets background colour to navigation and dropdowns
-.extendednavigation,
-.navigation-list--children {
+.extendednavigation {
     @media @tablet {
         background-color: @color-swatch2;
     }
 }
+
+.navigation-list--children {
+    @media @tablet {
+        background-color: lighten(@color-swatch2, 3%);
+    }
+}
+
 .navigation-list--children {
     left: inherit;
     right: 0;
