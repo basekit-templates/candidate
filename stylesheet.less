@@ -764,9 +764,9 @@ hr {
 
 .template-footer {
     .flex-item {
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+        -webkit-flex: 1 1 48%;
+        -ms-flex: 1 1 48%;
+        flex: 1 1 48%;
         @media @tablet {
             width: 100%;
         }
@@ -774,6 +774,11 @@ hr {
     .widget {
         width: 100%;
         margin: 0 auto;
+    }
+    .profile .twitter {
+        .account-link, .tweet-metadata .via, .tweet-metadata .timestamp {
+            color: @color-swatch7;
+        }
     }
 }
 
@@ -788,16 +793,12 @@ hr {
     background-color: darken(@color__body--background, 70%);
     .widget {
         h1, h2, h3, h4, p, a, .social-link:before,
-        .account-link, .tweet-metadata .via, .tweet-metadata .timestamp,
         .signupform .legend {
             color: @color-swatch7;
         }
     }
     @media @tablet {
         padding: 30px 5%;
-    }
-    .tweet-item .avatar-link {
-        margin: 0;
     }
 }
 
@@ -827,16 +828,24 @@ hr {
             margin: 0 auto;
         }
     }
+    .profile .twitter .tweet-item .avatar-link {
+        margin: 0;
+        @media @tablet {
+            margin: 0 auto;
+        }
+    }
+    .profile .twitter .tweet-item {
+        text-align: left;
+        max-width: 450px;
+        @media @tablet {
+            text-align: center;
+            max-width: inherit;
+        }
+    }
 }
 
 .template-footer2__column2 {
     text-align: right;
-    .profile .twitter .tweet-item {
-        text-align: left;
-        @media @mobile {
-            text-align: center;
-        }
-    }
     .signupform .form-body {
         width: 90%;
         margin: 0 0 0 auto;
@@ -847,6 +856,21 @@ hr {
         @media @tablet {
             width: 100%;
             margin: 0 auto;
+        }
+    }
+    .profile .twitter .tweet-item {
+        text-align: right;
+        max-width: 450px;
+        margin: 0 0 0 auto;
+        @media @tablet {
+            text-align: center;
+            max-width: inherit;
+        }
+        .avatar-link {
+            margin: 0 0 0 auto;
+            @media @tablet {
+                margin: 0 auto;
+            }
         }
     }
 }
