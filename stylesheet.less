@@ -112,12 +112,26 @@ p {
 
 
 // -----------------------------
-// Widgets
+// Zone width
 // -----------------------------
 
-.container .widget,
-.edit #page-zones__main:empty, // zone area in V8
-.edit .bk-zone-overlay.empty-zone { // zone area in V7
+.bk-pt-home,
+.bk-pt-default,
+.bk-pt-donate {
+    .template-content { // zone area in V7
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @media only screen and (min-width: 1140px) {
+            width: 960px; // 1140px - 10% for margins
+            margin: 10px auto;
+        }
+    }
+}
+
+.bk-pt-blogpostlist .container .widget {
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
@@ -127,6 +141,16 @@ p {
         width: 960px; // 1140px - 10% for margins
         margin: 10px auto;
     }
+}
+
+
+// -----------------------------
+// Widgets
+// -----------------------------
+
+.container .widget {
+    width: 100%;
+    margin: 10px 0;
 }
 
 // Widgets in Responsive Columns
@@ -153,8 +177,6 @@ p {
         }
     }
 }
-
-
 
 
 // -----------------------------
