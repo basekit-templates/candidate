@@ -793,6 +793,13 @@ hr {
         width: 100%;
         margin: 0 auto;
     }
+    .profile .signupform .form-body {
+        max-width: 450px;
+        width: 90%;
+        @media @mobile {
+            max-width: 100%;
+        }
+    }
 }
 
 .template-footer1 {
@@ -842,15 +849,13 @@ hr {
     .profile .twitter .tweet-item,
     .signupform .legend  {
         text-align: left;
-        @media @mobile {
+        @media @tablet {
             text-align: center;
         }
     }
-    .signupform .form-body {
-        width: 90%;
+    .profile .signupform .form-body {
         margin: 0 auto 0 0;
         @media only screen and (max-width: 1024px) {
-            width: 90%;
             margin: 0 auto 0 0;
         }
         @media @tablet {
@@ -879,16 +884,20 @@ hr {
     @media @tablet {
         text-align: center;
     }
-    .signupform .form-body {
-        width: 90%;
+    .profile .signupform .form-body {
         margin: 0 0 0 auto;
         @media only screen and (max-width: 1024px) {
-            width: 90%;
             margin: 0 0 0 auto;
         }
         @media @tablet {
             width: 100%;
             margin: 0 auto;
+        }
+    }
+    .profile .signupform .legend  {
+        text-align: right;
+        @media @tablet {
+            text-align: center;
         }
     }
     .profile .twitter .tweet-item {
