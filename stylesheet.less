@@ -517,8 +517,17 @@ hr {
     .background-image,
     .content-wrap {
         min-height: 600px;
+        @media only screen and (max-width: 900px) {
+            min-height: 500px;
+        }
+        @media @tablet {
+            min-height: 450px;
+        }
         @media only screen and (max-width: 600px) {
             min-height: 340px;
+        }
+        @media @mobile {
+            min-height: 250px;
         }
     }
     .background-image {
@@ -578,7 +587,7 @@ hr {
     }
     .button {
         width: auto;
-        margin: 10px 0;
+        margin: 10px 0 0;
         padding: 0 20px;
         font-size: 14px;
         line-height: 24px;
@@ -666,6 +675,10 @@ hr {
         .align-content(space-between);
 
         .widget {
+            padding: 20px 0;
+            @media only screen and (max-width : 600px) {
+                padding: 0;
+            }
             @media @mobile {
                 -webkit-flex: 1 1 100%;
                 -ms-flex: 1 1 100%;
