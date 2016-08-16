@@ -2,7 +2,7 @@
     "name": "Candidate",
     "widgetVersion":2,
     "thumbnail": "thumbnail.png",
-    "screenshot": "screenshot.jpg",
+    "screenshot": "candidate-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home","donate", "blogpostlist"],
     "images": [
